@@ -34,7 +34,7 @@ public class ReservationControllerTest {
     // JUnit test for GET employee by id REST API
     @Test
     public void givenBookTicketObject_whenCreateBookTicket_thenReturnTicketDetails() throws Exception{
-    	BookTicket ticket = BookTicket.builder().userId("u104").from("London").to("France").trainSection("A").seatNo(3).build();
+    	BookTicket ticket = BookTicket.builder().userId("u102").from("London").to("France").trainSection("A").seatNo(3).build();
     	
     	given(ReservationService.createTicket(ticket))
         .willAnswer((invocation)-> invocation.getArgument(0));
